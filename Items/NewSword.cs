@@ -30,7 +30,8 @@ namespace NewSword.Items
 		public override void AddRecipes() 
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.DirtBlock, 10);
+			//recipe.AddIngredient(ItemID.DirtBlock, 10);
+			recipe.AddIngredient(mod.ItemType("basicItem"));
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
