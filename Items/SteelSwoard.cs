@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terraria;
+﻿using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.ID;
 
 namespace NewSword.Items
 {
@@ -16,6 +10,7 @@ namespace NewSword.Items
             DisplayName.SetDefault("Steel broad swaord");
             Tooltip.SetDefault("lookin sharp");
         }
+
         public override void SetDefaults()
         {
             item.damage = 20;
@@ -31,6 +26,7 @@ namespace NewSword.Items
             item.UseSound = SoundID.Item1;
             item.autoReuse = true;
         }
+
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
