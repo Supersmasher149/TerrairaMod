@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terraria.ID;
+﻿using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace NewSword.Items
@@ -14,6 +9,7 @@ namespace NewSword.Items
         {
             DisplayName.SetDefault("Basic Item");
         }
+
         public override void SetDefaults()
         {
             item.width = 12;
@@ -22,6 +18,7 @@ namespace NewSword.Items
             item.value = 10;
             item.maxStack = 999;
         }
+
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
@@ -30,6 +27,5 @@ namespace NewSword.Items
             recipe.SetResult(this);
             recipe.AddRecipe();
         }
-
     }
 }
