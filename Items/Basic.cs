@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 
 namespace NewSword.Items
 {
-    public class basicItem : ModItem
+    public class Basic : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -18,7 +18,7 @@ namespace NewSword.Items
         {
             item.width = 12;
             item.height = 12;
-            item.rare = 2;
+            item.rare = ItemRarityID.Green;
             item.value = 10;
             item.maxStack = 999;
         }
